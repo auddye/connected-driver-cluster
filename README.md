@@ -69,6 +69,13 @@ If you would like this script to delete the firebase database use a text editor 
 ./1-delete.sh
 ```
 
+**For Now insert a messages into our obd_messages table***
+
+```
+mapr dbshell
+insert /obd/obd_messages --value '{"_id":"001","vin":"2HMDJJFB2JJ000017", "date":"2-13-2019","message":"Engine Status: HEALTHY", "severity":"0"}'
+```
+
 
 
 **Edge Node Programs **
